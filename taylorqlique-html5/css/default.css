@@ -1,0 +1,1471 @@
+/*	
+ * 3dcart Shopping Cart System - Version: 6
+ * http://3dcart.com/
+ * Date: Tue, Sept 23 2014
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+/*body:: Controls website background and any other text outside of a table without an associated style.*/ 	
+body {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 14px;
+	color: #000;
+	background: #FFF;
+	font-weight: 700;
+	padding: 0;
+	margin: 0;
+}
+img {
+	border: 0;
+}
+input,
+textarea {
+	font-family: 'Quicksand', sans-serif;
+}
+#frameHomeCarousel {
+	background: #e74c3c;
+}
+#mobileMenu i,
+#mobileCart i {
+	color: #34495e;
+	font-size: 21px;
+}
+::selection {
+	color: #FFF;
+	background: #e74c3c;
+}
+::-moz-selection {
+	color: #FFF;
+	background: #e74c3c;
+}
+blockquote {
+	color: #000;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 1em;
+	background: #FFF;
+	border-left: 6px solid #e74c3c;
+	margin: 0 0 15px 0;
+	padding: 40px;
+}
+/* QuickSearch */
+table.searchlight-results {
+	border: 1px solid #000;
+    width: 443px;
+}
+div.searchlight-results-wrapper {
+	border: none;
+    margin-top: 1px;
+}
+
+/*******************************************************************************************************/
+/*          STYLES USED ON THE FRAME OF THE WEBSITE (HEADER, LEFT NAV, RIGHT NAV AND FOOTER)           */
+/*******************************************************************************************************/
+
+
+/*store-name:: Store Name.*/		 
+.store-name {
+	font-size: 35px;
+	color: #000;
+	font-weight: 700;
+	text-decoration: none;
+	line-height: 35px;
+}
+/*store-slogan:: Store Slogan.*/		 
+.store-slogan {
+	font-size: 14px;
+	color: #000;
+	font-weight: 700;
+	text-transform: lowercase;
+}
+/*frame:: Controls the left and right column background.*/		
+.frame {
+	background: #FFF;
+}
+/*mod_bg:: Controls the left and right column modules background.*/		
+.mod_bg {
+	background: none;
+}
+/*frame-ht:: Controls the height left, right and middle columns.*/		
+.frame-ht {
+	height: 1000px;
+}
+/*menu-headers:: Controls the way the menu titles look. For example: Categories, Browse By Price, Top Sellers, etc.*/ 
+.menu-headers {
+	font-size: 16px;
+	color: #000;
+	font-weight: 700;
+	line-height: 30px;
+	background: #FFF;
+	border-bottom: 5px solid #e64d3d;
+	margin-bottom: 10px;
+	padding-left: 8px;
+	width: 85%;
+	height: 42px;
+	line-height: 42px;
+	display: block;
+}
+/*footer::  This style controls the text you type under global footer. Merchants usually use to add security logos, credit card logos, privacy notes, etc.*/		
+.footer {
+	font-size: 12px;
+	color: #000;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+/*footerLinks::  Controls the way the Footer Links display in the Global Footer.*/
+.footer a, .footer a:visited, .footer a:hover, .footer a:visited:hover {
+	font-size: 12px;
+	color: #000;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+/*icon:: Controls the way the menu icons display if they are being used.*/ 
+.icon {
+	font-size: 10px;
+	font-weight: 700;
+	color: #FFF;
+}
+/*top-sellers-star:: Controls the background image and style for the top ranking item star.*/
+.top-sellers-star {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	background: #e74c3c;
+	position: absolute;
+	top: -8px;
+	left: 112px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #FFF;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+/*ranking:: Controls the way the menu icons display if they are being used.*/ 
+.ranking {
+	float: left;
+	font-size: 12px;
+	font-weight: 700;
+	color: #e74c3c;
+	width: 12px;
+	height: 20px;
+	text-align: left;
+}
+/*menu-text:: Controls the way the menu (mailing list) text look on the frame.*/ 
+.menu-text {
+	font-size: 14px;
+	color: #000;
+	font-weight: 700;
+}
+/*price2:: Controls the way the product's price display in the top sellers and new releases sections.*/ 
+.price2 {
+	font-size: 16px;
+	color: #34495e;
+	font-weight: 700;
+}
+/*cart-text:: Controls the way the text on the mini shopping cart displays. The mini-shopping cart is usually located in the header.*/ 
+.cart-text {
+	font-size: 48px;
+	font-weight: 700;
+	color: #15212a;
+}
+/*search-text:: Controls the way the search box displays of the frame.*/ 
+.search-text {
+	font-size: 20px;
+	font-weight: 700;
+	color: #3d3d3d;
+	line-height: 57px;
+	height: 57px;
+	width: 443px;
+	background: #FFF;
+	border: none;
+	padding: 0 0 0 25px;
+	margin: 0;
+}
+/*A.cat:: Controls the way the Category Links display in the left or right navigation bars before a user clicks or mouses over them.*/ 	 
+A.cat {
+	color: #000;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	text-decoration: none;
+	letter-spacing: -1px;
+	display: block;
+	padding: 0 8px;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+/*A.cat:hover:: When a user passes  their mouse over them.*/ 	
+A.cat:hover {
+	color: #FFF;
+	background: #34495e;
+	text-decoration: none;
+}
+/*A.cat:visited:: After a user has visited that section.*/ 
+A.cat:visited {
+	color: #000;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	text-decoration: none;
+	letter-spacing: -1px;
+	display: block;
+	padding: 0 8px;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+/*A.cat:visited:hover:: When a user hovers over a section they have visited.*/ 	 
+A.cat:visited:hover {
+	color: #FFF;
+	background: #34495e;
+	text-decoration: none;
+}
+/*A.subcat:: Controls the way the Sub-Category Links display in the left or right navigation bars before a user clicks or mouses over them.*/ 	 
+A.subcat {
+	color: #000;
+	font-size: 12px;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+}
+/*A.subcat:hover:: When a user passes  their mouse over them.*/ 	
+A.subcat:hover {
+	color: #e74c3c;
+	text-decoration: none;
+}
+/*A.subcat:visited:: After a user has visited that section.*/ 
+A.subcat:visited {
+	color: #000;
+	font-size: 12px;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+}
+/*A.subcat:visited:hover:: When a user hovers over a section they have visited.*/ 	 
+A.subcat:visited:hover {
+	color: #e74c3c;
+	text-decoration: none;
+}
+/*A:menu:: Controls the way the Links display in the top navigation before a user clicks or mouses over on them.*/ 	 
+A.menu {
+	color: #b0b0b0;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: none;
+}
+/*A:menu:over:: When a user passes their mouses over them.*/ 	
+A.menu:hover {
+	color: #e74c3c;
+	text-decoration: none;
+}
+/*A:menu:over:: After a user has visited that section.*/ 	
+A.menu:visited {
+	color: #b0b0b0;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: none;
+}
+/*A:menu:visited:over:: A user hovers over a section they have visited.*/ 		
+A.menu:visited:hover {
+	color: #e74c3c;
+	text-decoration: none;
+}
+/*A:menu-bottom:: Controls the way the Links in the footer display before a user clicks or mouses over on them.*/ 	 
+A.menu-bottom {
+	color: #000;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+/*A:menu-bottom:over:: When a user passes their mouses over them.*/ 	
+A.menu-bottom:hover {
+	color: #e74c3c;
+	text-decoration: none;
+}
+/*A:menu-bottom:over:: After a user has visited that section.*/ 	
+A.menu-bottom:visited {
+	color: #000;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+/*A:menu-bottom:visited:over:: When a user hovers over a section they have visited.*/ 		
+A.menu-bottom:visited:hover {
+	color: #e74c3c;
+	text-decoration: none;
+}
+/*A:link:: Controls the way Secondary Links display before a user clicks or mouses over on them.*/ 	 
+A.link {
+	color: #15212a;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1em;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+}
+/*A:link:over:: When a user passes their mouses over them.*/ 	
+A.link:hover {
+	color: #e74c3c;
+	text-decoration: none;
+}
+/*A:link:over:: After a user has visited that section.*/ 	
+A.link:visited {
+	color: #15212a;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1em;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+}
+/*A:link:visited:over:: When a user hovers over a section they have visited.*/ 		
+A.link:visited:hover {
+	color: #e74c3c;
+	text-decoration: none;
+}
+/*A.details:: Controls the way the Top Sellers Links display before a user clicks or mouses over them.*/ 	 
+A.details {
+	color: #000;
+	font-size: 12px;
+	font-style: normal;
+	text-decoration: underline;
+	font-weight: 700;
+}
+/*A.details:hover:: When a user passes their mouse over them.*/ 	 	
+A.details:hover {
+	color: #e74c3c;
+	text-decoration: none;
+}
+/*A.details:visited:: After a user has visited that section.*/ 
+A.details:visited {
+	color: #000;
+	font-size: 12px;
+	font-style: normal;
+	text-decoration: underline;
+	font-weight: 700;
+}
+/*A.details:visited:hover:: When a user hovers over a section they have visited.*/ 	 
+A.details:visited:hover {
+	color: #e74c3c;
+	text-decoration: none;
+}
+/*******************************************************/
+/*          STYLES USED THROUGHTOUT THE WEBSITE        */
+/*******************************************************/
+
+
+
+/*Alignment fix for the use of the XHTML Transitional DOCTYPE.*/ 
+tr {
+	text-align: left;
+}
+/*td:: Controls all text inside a table without and associated style.*/ 
+td {
+	text-decoration: none;
+	word-spacing: normal;
+	font-size: 12px;
+}
+/*data:: Controls the font style of your content on all the pages.*/
+.data {
+	text-decoration: none;
+	word-spacing: normal;
+	font-size: 12px;
+}
+/*alternative:: Controls the background color of the boxes used throughout the site.*/
+.alternative {
+	background: #FFF;
+}
+/*page_headers:: Controls the title of all your pages.*/
+.page_headers {
+	font-size: 38px;
+	font-weight: 700;
+	color: #e74c3c;
+}
+/*titles:: Controls the Tiles  of sections within pages on the site such as (Specials, Feature Items, Items, Related Items).*/ 
+.titles {
+	font-size: 18px;
+	color: #000;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 30px;
+	margin-bottom: 10px;
+	padding-left: 9px;
+	border-bottom: 1px solid #000;
+	display: block;
+}
+/*price:: Controls the way the product's final price display throughout the site.*/ 
+.price {
+	font-size: 13px;
+	color: #e74c3c;
+	font-weight: 700;
+	letter-spacing: 0;
+}
+/*error:: Controls the error messages*/ 
+.error {
+	font-size: 12px;
+	font-weight: 700;
+	color: #e10e04;
+	text-decoration: none;
+}
+/*borders:: Controls the color of the line dividers used throughout the site.*/ 
+.borders {
+	color: #585C5F;
+	border: 1px solid #CCC;
+	border-style: none none solid;
+}
+/*borders2:: Controls the color of the solid line dividers used throughout the site.*/ 
+.borders2 {
+	border: 1px solid #CCC;
+	border-style: none none solid;
+}
+/*A:: Controls the way the all Links without an associated style display before a user clicks or mouses over them.*/ 	 
+A {
+	color: #000;
+	font-size: 14px;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: 700;
+}
+/*A:hover:: When a user passes  their mouse over them.*/ 	 	
+A:hover {
+	color: #e74c3c;
+	text-decoration: underline;
+}
+/*A:visited:: After a user has visited that section.*/ 
+A:visited {
+	color: #000;
+	font-size: 14px;
+	font-style: normal;
+	text-decoration: none;
+	font-weight: 700;
+}
+/*A:visited:hover:: When a user hovers over a section they have visited.*/ 	 
+A:visited:hover {
+	color: #e74c3c;
+	text-decoration: underline;
+}
+/*******************************************************************************************************/
+/*   STYLES ONLY USED ON VIEW CART AND CHECKOUT PAGES      */
+/*******************************************************************************************************/
+
+/*checkout-headers:: Controls the titles of the sections on the checkout pages (Billing Information, Shipping Information etc)*/
+.checkout-headers {
+	font-size: 14px;
+	color: #000;
+	font-weight: 700;
+}
+/*steps:: Controls the way the steps on the checkout pages display.*/
+.steps {
+	font-size: 16px;
+	font-weight: 700;
+	color: #CCC;
+}
+/*steps_on:: Controls the way the step the customer is currently on displays on the checkout pages.*/
+.steps_on {
+	font-size: 16px;
+	font-weight: 700;
+	color: #e74c3c;
+}
+/*titles2:: Controls the titles on the view cart page*/ 
+.titles2 {
+	font-size: 12px;
+	font-weight: 700;
+	background-color: #EEE;
+	color: #e74c3c;
+	padding:4px;
+}
+/*******************************************************************************************************/
+/*   STYLES ONLY USED ON PRODUCT PAGES      */
+/*******************************************************************************************************/
+
+/*options-titles:: Controls the way the option titles display on the product page.*/
+.options-titles {
+	font-size: 12px;
+	font-weight: 700;
+	color: #585C5F;
+	border: 1px solid #CCC;
+	border-style: none none solid;
+}
+/*item:: Controls the item description and item details text.*/ 
+.item {
+	font-size: 12px;
+	color: #000;
+	font-weight: 700;
+}
+/*itemTitle:: Controls the name of the Product.*/ 
+.item-title {
+	font-size: 22px;
+	color: #e74c3c;
+	font-weight:bold;
+}
+/*price-info:: Controls the way the sub-prices display on the product page, the final price is controlled by the style called "price".*/ 
+.price-info {
+	font-size: 12px;
+	font-weight: 700;
+	color: #585C5F;
+}
+/*small-txt:: Controls the way the item id displays.*/ 
+.small-txt {
+	color: #afafae;
+	text-decoration: none;
+	text-align: left;
+	letter-spacing: 0;
+	font-size: 10px;
+	vertical-align:bottom;
+}
+/*availability-txt:: Controls the way the Availability of the product displays i.e. 'In Stock', 'Back Order'.*/ 
+.availability-txt {
+	color: #e74c3c;
+}
+/*reward-title:: Controls the title of the Reward Points section.*/ 
+.reward-title {
+	color: #e74c3c;
+	text-decoration: none;
+	word-spacing: normal;
+	text-align: left;
+	letter-spacing: 7px;
+	line-height: 10px;
+	font-size: 16px;
+	font-style:italic;
+}
+/**********************************************************/
+/*      FORM FIELDS & BUTTONS THROUGHOUT THE WEBSITE      */
+/**********************************************************/
+
+/*btn:: Controls the buttons, (ONLY if it is not using and image).*/ 
+.btn {
+	border: none;
+	background: #34495e;
+	font-weight: 700;
+	font-size: 12px;
+	color: #FFF;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin: 0;
+	padding: 9px 14px;
+	-webkit-appearance: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+/*btn_over:: Controls the buttons when a user mouses over them, (ONLY if it is not using and image).*/ 
+.btn_over {
+	border: none;
+	background: #e74c3c;
+	font-weight: 700;
+	font-size: 12px;
+	color: #FFF;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin: 0;
+	padding: 9px 14px;
+	-webkit-appearance: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+/*button:hover:: Controls the button tag when a user mouses over them, (ONLY if it is not using and image).*/ 
+button:hover {
+	border: none;
+	background: #e74c3c;
+	font-weight: 700;
+	font-size: 12px;
+	color: #FFF;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin: 0;
+	padding: 9px 14px;
+	-webkit-appearance: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+/*txtBoxStyle:: Controls the text and style of the Text Boxes.*/  	
+.txtBoxStyle {
+	border: 1px solid #b7b4ac;
+	background: #fefefe;
+	font-weight: 400;
+	font-size: 12px;
+	color: #000;
+    margin: 0;
+	padding: 8px 12px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+/*txtAreaStyle:: Controls the text and style of the Text Areas.*/ 	
+.txtAreaStyle {
+	border: 1px solid #b7b4ac;
+	background: #fefefe;
+	font-weight: 400;
+	font-size: 12px;
+	color: #000;
+    margin: 0;
+	padding: 8px 12px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+/*txtSearch:: Controls the style of the Search Box, if different from txtBoxStyle.*/
+.txtBoxSearch {
+	height: 20px;
+	color: #000;
+	font-size: 12px;
+	border: none;
+	padding: 3px 0 0 0;
+	margin: 0;
+}
+
+/********************************************/
+/*   STYLES USED ONLY ON THE INVOICE        */
+/********************************************/
+
+/*invoice_table:: Controls the background color on your invoices*/ 
+.invoice_table {
+	background-color: #f9f8f8;
+}
+/*invoice_title:: Controls the way the title of the invoices look */ 
+.invoice_title {
+	font-size: 10px;
+	font-weight: 700;
+	background-color: #cbcaca;
+	color: #4f4e4e;
+}
+/*************************************************************/
+/*          LEGACY STYLES: STYLES USED PRIOR TO v3.2         */
+/*************************************************************/
+
+/*font1:: Primary Screen Font */ 
+.font1 {
+	font-size: 12px;
+	font-weight: 700;
+	color: #000;
+}
+/*font2:: Secondary Screen Font */ 
+.font2 {
+	font-size: 12px;
+	font-weight: 700;
+	color: #e74c3c;
+}
+.font3 {
+	font-size: 12px;
+	font-weight: 700;
+	color: #FFF;
+}
+.font4 {
+	font-size: 12px;
+	font-weight: 700;
+	color: #c32519;
+}
+/*top:: Controls the  Color of the top Bar*/		
+.top {
+	background: none;
+}
+/*line:: Controls the  Color of the line bellow the top bar*/		
+.line {
+	background: #FFF;
+}
+
+/*********************************/
+/*          CUSTOM STYLES        */
+/*********************************/
+
+/* Accent/Secondary Colors */
+
+.accent-color {
+    color: #e74c3c;
+}
+.accent-bg-color {
+    background: #e2e2e2;
+    color: #000;
+}
+
+#mainContainer {
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+}
+#mobileMenu {
+	display: none;
+	float: left;
+	width: 30px;
+	height: 25px;
+	margin: 15px 0 0 10px;
+}
+#mobileCart {
+	display: none;
+	float: right;
+	width: 30px;
+	height: 25px;
+	margin: 15px 10px 0 0;
+}
+a#search {
+	float: right;
+	width: 39px;
+	height: 51px;
+	display: block;
+	background: #e74c3c url(../images/lens.png) no-repeat center center;
+	margin-left: 5px;
+}
+a#cart {
+	float: right;
+	width: 72px;
+	height: 98px;
+	color: #FFF;
+	font-size: 36px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 0.5em;
+	text-decoration: none;
+	background: #34495e;
+	margin-left: 5px;
+}
+a#cart span {
+	font-size: 12px;
+	display: block;
+	font-weight: 700;
+	margin: 10px 0;
+}
+a#myacctLogin {
+	float: right;
+	width: 39px;
+	height: 41px;
+	display: block;
+	background: #e74c3c url(../images/myacct-icon.png) no-repeat center center;
+	margin-left: 5px;
+}
+a#homePage {
+	float: right;
+	width: 39px;
+	height: 33px;
+	display: block;
+	background: #e74c3c url(../images/home-icon.png) no-repeat center center;
+	margin-left: 5px;
+}
+.login {
+	float: right;
+	line-height: 33px;
+	margin-right: 5px;
+}
+#searchBox {
+	width: 547px;
+	display: none;
+}
+#searchBox form {
+    position: relative;
+}
+#searchBox input {
+	float: left;
+	font-size: 18px;
+	color: #000;
+	font-weight: 700;
+	-webkit-appearance: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+#searchBox input[type="text"] {
+	border: 1px solid #000;
+	border-right: none;
+}
+.search-btn {
+	width: 68px;
+	height: 57px;
+	margin: 0;
+	padding: 0;
+	background: #e74c3c url(../images/search_btn.png) no-repeat;
+	border: none;
+	-webkit-appearance: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	cursor: pointer;
+}
+header {
+	position: relative;
+	height: 122px;
+}
+#logo {
+	margin-top: 1%;
+	float: left;
+}
+#logo img {
+	max-width: 100%;
+	max-height: 122px;
+}
+li.search {
+	display: none;
+}
+nav {
+	position: relative;
+	line-height: 38px;
+	border-bottom: 1px solid #34495e;
+	margin-bottom: 35px;
+}
+nav ul {
+	float: left;
+	list-style: none;
+	line-height: 38px;
+	height: 38px;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+nav li {
+	display: block;
+	float: left;
+}
+.home-carousel {
+	margin-bottom: 35px;
+}
+aside#leftBar {
+	float: left;
+	width: 183px;
+	margin: 0 13px 0 0;
+    display: block;
+}
+aside .module {
+	margin-bottom: 25px;
+}
+aside .module ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+aside .module li a, aside .module li a:visited {
+	padding: 0.5em;
+}
+aside .module li a:hover, aside .module li a:visited:hover {
+	color: #FFF;
+	background: #e74c3c;
+	text-decoration: none;
+}
+aside .module .info {
+	width: 100%;
+}
+aside .module .name {
+	margin-bottom: 10px;
+}
+aside .module .price2 {
+	display: inline-block;
+}
+aside .module .stars {
+	display: inline-block;
+	margin-right: 10px;
+}
+aside .module .div {
+	display: block;
+	height: 1px;
+	background: #15212a;
+	margin: 10px 0;
+}
+.manf-select {
+	width: 183px;
+	overflow: hidden;
+	height: 29px;
+	background: #FFF url(../images/dark-arrow.png) no-repeat right center;
+	border: 1px solid #000;
+}
+.manf-select select {
+	font-weight: 700;
+	width: 210px;
+	height: 29px;
+	line-height: 29px;
+	-webkit-appearance: none;
+	background: transparent !important;
+	border: none;
+}
+.topsellers_topitem {
+	border: 5px solid #FFF;
+}
+.topsellers_topitem .img {
+	display: table-cell;
+	width: 183px;
+	height: 200px;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+}
+.topsellers_topitem .info {
+	background: #FFF;
+	padding: 0.5em 0;
+}
+#mainContent {
+	float: left;
+	width: 100%;
+}
+footer {
+	position: relative;
+	border-top: 11px solid #e74c3c;
+	margin-bottom: 15px;
+}
+#FRAME_LINKS {
+	float: left;
+}
+ul.frame-links {
+	list-style: none;
+	display: block;
+	width: 550px;
+	min-height: 130px;
+	margin: 25px 0 0 5px;
+	padding: 0;
+}
+ul.frame-links li {
+	float: left;
+	width: 33%;
+}
+#copyright {
+	float: left;
+}
+.social-icons {
+    float: right;
+	margin: 20px 25px 0 0;
+	width: 310px;
+}
+.social-icons a {
+	float: left;
+    font-size: 18px;
+	width: 27px;
+	height: 27px;
+	display: block;
+	background: none;
+	margin: 0 8px;
+}
+#mailistBox {
+    float: right;
+	margin: 25px 25px 0;
+	width: 310px;
+}
+#mailistBox input {
+	float: left;
+}
+#mailistBox label {
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+	display: block;
+	margin: 0 0 10px 0;
+}
+#mailistBox input[type="text"] {
+	color: #5a5a5a;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: -1px;
+	width: 75%;
+	height: 39px;
+	line-height: 39px;
+	margin: 0;
+	padding: 0 0 0 10px;
+	background: #FFF;
+	border: 1px solid #000;
+	border-right: none;
+	-webkit-appearance: none;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+}
+#mailistBox input[type="submit"] {
+	color: #FFF;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	text-indent: -9999px;
+	text-transform: uppercase;
+	width: 25%;
+	height: 39px;
+	margin: 0;
+	padding: 0;
+	background: #e74c3c url(../images/submit-arrow.png) no-repeat center center;
+	border: none;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+#mailistBox input[type="submit"]:hover {
+	background: #34495e url(../images/submit-arrow.png) no-repeat center center;
+}
+.stats {
+	height: 0;
+	overflow: hidden;
+}
+
+/*	home.html Template
+	------------------	*/
+.header-specials {
+	width: 40%;
+	color: #15212a;
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 50px;
+	border-bottom: 1px solid #15212a;
+	margin: 0 0 50px 0;
+}
+.hs-item {
+	width: auto;
+	background: #FFF;
+	border: 8px solid #34495e;
+	position: relative;
+}
+.hs-item .on-sale {
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #FFF;
+	font-size: 12px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	background: #e74c3c;
+	padding: 5px 10px;
+	display: none;
+}
+.hs-item .img {
+	display: block;
+	height: 265px;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+}
+.hs-item .img img {
+	position: absolute;
+	left: 0;
+	top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.hs-item .overlay {
+	text-align: left;
+	position: absolute;
+	left: 0;
+	top: 0;
+    right: 0;
+    bottom: 0;
+	background: #34495e;
+	padding: 0 5%;
+	display: none;
+	cursor: pointer;
+}
+.hs-item .overlay a {
+	color: #FFF;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: url(../images/item-arrow.png) no-repeat;
+	width: 44px;
+	height: 44px;
+	display: block;
+	text-indent: -9999px;
+}
+.hs-item .info {
+	margin-top: 10%;
+}
+.hs-item .info > div {
+	margin-bottom: 5px;
+}
+.hs-item .name {
+	font-size: 18px;
+	color: #FFF;
+	font-weight: 700;
+	line-height: 18px;
+	min-height: 60px;
+}
+.hs-item .stars {
+	margin: 0;
+}
+.hs-item .stars img {
+    position: relative;
+}
+.hs-item .price2 {
+	color: #FFF;
+	font-size: 18px;
+	font-weight: 700;
+}
+#home .onsale-item {
+	border: 8px solid #e74c3c;
+}
+#home .onsale-overlay {
+	background: #e74c3c;
+}
+.category-footer {
+	border-top: 1px solid #34495e;
+	padding: 15px 0;
+}
+
+/*	listing_0.html Template
+	-----------------------	*/
+#listing0 h1 {
+    font-size: 18px;
+}
+
+/* SimpleModal modifications */
+#simplemodal-container {
+	background: none !important;
+	border: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+#simplemodal-overlay {
+	background-color: #FFFFFF !important;
+	opacity: 0.9 !important;
+}
+a.modalClose {
+	background: url(../images/x.png) no-repeat;
+	width: 15px;
+	height: 15px;
+	display: block;
+	position: absolute;
+	right: -25px;
+	top: -25px;
+}
+
+/*********************************/
+/*       LTE8 IE FALLBACK        */
+/*********************************/
+.no-boxshadow .boxShadow {
+    border: 1px solid #eae9e6;
+}
+
+/*	Theme Responsive Styles
+	-----------------------	*/
+@media only screen and (max-width: 767px) {
+
+html {
+	padding: 0 !important;
+}
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+	padding: 8px 0 0 0 !important;
+}
+#mainContainer {
+	width: 100% !important;
+	margin: auto;
+	padding: 0 20px;
+}
+header {
+	height: 65px;
+}
+aside {
+	display: none !important;
+}
+#mainContent {
+	display: block;
+	width: 100% !important;
+	padding-bottom: 2em;
+}
+#logo {
+	float: none;
+	margin-left: 0;
+	text-align: center;
+}
+#logo img {
+    max-height: 45px;
+    margin-top: 2%;
+}
+#searchBox {
+	width: 100%;
+	padding: 0 2em;
+}
+#searchBox input[type="text"] {
+	width: 100%;
+}
+#mobileMenu, #mobileCart {
+	display: block;
+}
+.mobile .search {
+	display: block;
+	border: 1px solid #000;
+	margin: 5px 0 15px 0;
+}
+.mobile .search form {
+	margin: 0 auto;
+	text-align: center;
+}
+.mobile .search input {
+	float: left;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-appearance: none;
+}
+.mobile .search input[type="text"] {
+	font-size: 16px;
+	font-weight: 700;
+	color: #3d3d3d;
+	line-height: 30px;
+	height: 30px;
+	width: 80%;
+	background: #FFF;
+	border: none;
+	padding: 0 0 0 15px;
+	margin: 0;
+}
+.mobile .search input[type="submit"] {
+	width: 20%;
+	height: 30px;
+	background: #e74c3c url(../images/lens.png) no-repeat center center;
+	border: none;
+	cursor: pointer;
+}
+nav {
+	width: 100%;
+	height: auto;
+	border: none;
+    overflow: visible;
+}
+nav ul {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	height: auto;
+	display: none;
+	padding: 10px;
+    z-index: 1005;
+}
+nav li {
+	float: none;
+	text-align: center;
+	display: block;
+}
+nav li a, nav li a:visited {
+	width: 100%;
+	float: none;
+	display: block;
+	padding: 0 !important;
+}
+#homeCarousel {
+    position: relative;
+	margin: 0 auto 15px !important;
+    overflow: hidden;
+}
+#homeCarousel img {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+#homeHeader {
+	border: none;
+	margin-bottom: 0;
+	padding-bottom: 20px;
+}
+#homeHeader img {
+	width: 100%;
+	height: auto;
+}
+.productBlockContainer {
+	margin: 0;
+}
+.header-specials {
+	width: 100%;
+	margin-bottom: 25px;
+}
+.hs-item {
+	width: 100%;
+	margin: 0 0 13px;
+}
+.hs-item .img {
+	width: 100%;
+	margin: 0 auto;
+}
+.hs-item .overlay {
+	width: 100%;
+}
+#copyright {
+	float: none;
+	text-align: center;
+}
+#mailistBox {
+    float: none;
+    margin: 0;
+	width: 100%;
+	height: auto;
+}
+#mailistBox label {
+	text-align: center;
+}
+#mailistBox input[type="text"] {
+	width: 80%;
+}
+#mailistBox input[type="submit"] {
+	width: 20%;
+}
+#FRAME_LINKS {
+	float: none;
+}
+ul.frame-links {
+	list-style: none;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	padding: 1.5em 0;
+}
+ul.frame-links li {
+	float: none;
+	width: 100%;
+	margin: 0 0 10px 0;
+}
+ul.frame-links a {
+	font-size: 110%;
+	display: block;
+}
+.social-icons {
+	width: 100%;
+	display: block;
+	position: relative;
+	text-align: center;
+	margin: 20px 0;
+}
+.social-icons a {
+	float: none;
+	display: inline-block;
+}
+#globalFooter {
+	float: none;
+	text-align: center;
+	margin-top: 10px;
+}
+
+}
+
+@media only screen and (max-width: 980px) {
+
+html {
+	padding: 0 !important;
+}
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+	padding: 8px 0 0 0 !important;
+}
+#mainContainer {
+    width: 100%;
+	padding: 0 20px;
+}
+#leftBar {
+    display: none;
+}
+#rightBar {
+    display: none;
+}
+#logo {
+	margin-left: 2%;
+}
+#searchBox {
+	margin-right: 2%;
+}
+#cart {
+	right: 1%;
+}
+#FRAME_LINKS {
+    float: none;
+}
+ul.frame-links {
+    width: 100%;
+}
+#mailistBox {
+    margin: 0;
+	width: 100%;
+	height: auto;
+}
+#mailistBox label {
+	text-align: center;
+}
+#mailistBox input[type="text"] {
+	width: 80%;
+}
+#mailistBox input[type="submit"] {
+	width: 20%;
+}
+.social-icons {
+	width: 100%;
+	display: block;
+	position: relative;
+	text-align: center;
+	margin: 20px 0;
+}
+.social-icons a {
+	float: none;
+	display: inline-block;
+}
+#copyright {
+    float: none;
+    text-align: center;
+}
+
+}
+
+/* Tablet Layout: Portrait */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1) {
+
+ul.frame-links {
+    width: 100%;
+}
+#mailistBox {
+    margin: 0;
+	width: 100%;
+	height: auto;
+}
+#mailistBox label {
+	text-align: center;
+}
+#mailistBox input[type="text"] {
+	width: 80%;
+}
+#mailistBox input[type="submit"] {
+	width: 20%;
+}
+.social-icons {
+	width: 100%;
+	display: block;
+	position: relative;
+	text-align: center;
+	margin: 20px 0;
+}
+.social-icons a {
+	float: none;
+	display: inline-block;
+}
+#copyright {
+    float: none;
+    text-align: center;
+}
+
+}
